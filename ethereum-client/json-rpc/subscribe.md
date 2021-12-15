@@ -42,7 +42,10 @@ Depends on the subscription type.
 
 Subscribes to incoming block headers. Fires a notification each time a new header is appended to the chain, including chain reorganizations. Returns `Block object`.
 
-Parameter: `"newHeads"`
+Parameters:  
+
+ * `"newHeads"`,
+ * `{"includeTransactions": true}` \(optional\)
 
 #### Example
 
@@ -171,7 +174,10 @@ If RPC call doesn't have second parameter, or parameters `fromBlock` or `toBlock
 
 Subscribes to incoming pending transactions. Returns transaction hash.
 
-Parameter: `"newPendingTransactions"`
+Parameters: 
+
+ * `"newPendingTransactions"`
+ * `{"includeTransactions": true}` \(optional\)
 
 #### Example
 
